@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-
-
 import { supabase } from './../../lib/supabaseClient';
 
 function Home({ comments }) {
-  console.log({comments})
+  // console.log({comments})
   return (
       <>
     <Head>
