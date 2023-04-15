@@ -1,0 +1,15 @@
+/* .nav {
+    background: green;
+} */
+
+.navul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navlink{
+    color: var(--main-colour-pink);
+    padding: 1rem 0;
+    font-size: 28px;
+    font-weight: 900;
+}

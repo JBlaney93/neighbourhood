@@ -4,6 +4,8 @@
   margin: 0;
 }
 
+
+
 html,
 body {
   max-width: 100vw;
@@ -11,9 +13,17 @@ body {
 }
 
 body {
-  /* background: #F5E5FC; */
+  background: #464646;
+  --main-colour-pink: #E9B6BF; 
+  --main-colour-orange: #E07C65; 
+  --main-colour-yellow: #F8D47B; 
+  color: white;
 }
 
 a{
   text-decoration: none;
+}
+
+li{
+  list-style: none;
 }

@@ -7,3 +7,15 @@
   padding: 4rem 1rem;
   text-align: center;
 }
+
+.neigh{
+  color: var(--main-colour-pink)
+}
+
+.bour{
+  color: var(--main-colour-orange)
+}
+
+.hood{
+  color: var(--main-colour-yellow)
+}

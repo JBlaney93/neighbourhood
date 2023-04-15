@@ -1,27 +1,34 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
+import Nav from '@/components/Nav';
 import { supabase } from './../../lib/supabaseClient';
+import Welcome from '@/components/Welcome';
 
 function Home({ comments }) {
   // console.log({comments})
   return (
       <>
-    <Head>
-    <title>Create Next App</title>
-    <meta name="description" content="Website for Neighbourhood in Shawlands, Glasgow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <main className={styles.main}>
-      <h1>HOMEPAGE</h1>
+        <Head>
+        <title>Neighbourhood</title>
+        <meta name="description" content="Website for Neighbourhood in Shawlands, Glasgow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Nav />
+        
+        <main className={styles.main}>
+          <Welcome />
 
-    <ul>
-      {comments.map((comment) => (
-        <li key={comment.id}><p>{comment.username}</p><p>{comment.comment}</p></li>
-      ))}
-    </ul>
-    </main>
-    </>
+        <div>
+          <ul>
+            {comments.map((comment) => (
+              <li key={comment.id}><p>{comment.username}</p><p>{comment.comment}</p></li>
+            ))}
+          </ul>
+        </div>
+
+        </main>
+      </>
   );
 }
 
@@ -36,23 +43,3 @@ export async function getServerSideProps() {
 }
 
 export default Home;
-
-
-
-
-
-// export default function Home() {
-//   return (
-//     <>
-//       <Head>
-//         <title>Create Next App</title>
-//         <meta name="description" content="Website for Neighbourhood in Shawlands, Glasgow" />
-//         <meta name="viewport" content="width=device-width, initial-scale=1" />
-//         <link rel="icon" href="/favicon.ico" />
-//       </Head>
-//       <main className={styles.main}>
-//         <div>HOMEPAGE</div>
-//       </main>
-//     </>
-//   )
-// }
