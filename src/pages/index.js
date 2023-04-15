@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import Nav from '@/components/Nav';
 import { supabase } from './../../lib/supabaseClient';
 import Welcome from '@/components/Welcome';
+import About from '@/components/About';
 
 function Home({ comments }) {
   // console.log({comments})
@@ -18,7 +19,7 @@ function Home({ comments }) {
         
         <main className={styles.main}>
           <Welcome />
-
+          <About />
         <div>
           <ul>
             {comments.map((comment) => (

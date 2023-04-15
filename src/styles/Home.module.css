@@ -2,20 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   padding: 4rem 1rem;
   text-align: center;
 }
 
-.neigh{
+.pink{
   color: var(--main-colour-pink)
 }
 
-.bour{
+.orange{
   color: var(--main-colour-orange)
 }
 
-.hood{
+.yellow{
   color: var(--main-colour-yellow)
+}
+
+.welcomediv{
+  margin: 20px 0 40px 0;
 }
